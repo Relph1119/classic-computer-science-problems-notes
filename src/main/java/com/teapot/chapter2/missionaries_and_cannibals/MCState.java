@@ -55,10 +55,7 @@ public class MCState {
         if (wm < wc && wm > 0) {
             return false;
         }
-        if (em < ec && em > 0) {
-            return false;
-        }
-        return true;
+        return em >= ec || em <= 0;
     }
 
     public static List<MCState> successors(MCState mcs) {

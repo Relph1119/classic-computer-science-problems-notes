@@ -14,7 +14,7 @@ import java.util.Map;
  * SEND+MORE=MONEY
  */
 public class SendMoreMoneyConstraint extends Constraint<Character, Integer> {
-    private List<Character> letters;
+    private final List<Character> letters;
 
     public SendMoreMoneyConstraint(List<Character> letters) {
         super(letters);

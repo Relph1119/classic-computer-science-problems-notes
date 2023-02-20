@@ -11,7 +11,7 @@ import java.util.Comparator;
 public class Gene {
     // 核苷酸
     public enum Nucleotide {
-        A, C, G, T;
+        A, C, G, T
     }
 
     /**
@@ -36,7 +36,7 @@ public class Gene {
         }
     }
 
-    private ArrayList<Codon> codons = new ArrayList<>();
+    private final ArrayList<Codon> codons = new ArrayList<>();
 
     /**
      * 每次使用三个支付实例化一个Codon类，添加到codons数组中

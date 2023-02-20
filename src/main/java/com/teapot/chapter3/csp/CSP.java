@@ -13,9 +13,9 @@ import java.util.Map;
  * @param <D> 值域
  */
 public class CSP<V, D> {
-    private List<V> variables;
-    private Map<V, List<D>> domains;
-    private Map<V, List<Constraint<V, D>>> constraints = new HashMap<>();
+    private final List<V> variables;
+    private final Map<V, List<D>> domains;
+    private final Map<V, List<Constraint<V, D>>> constraints = new HashMap<>();
 
     public CSP(List<V> variables, Map<V, List<D>> domains) {
         this.variables = variables;

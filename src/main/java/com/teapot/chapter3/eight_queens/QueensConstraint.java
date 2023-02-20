@@ -11,7 +11,7 @@ import java.util.Map;
  * 八皇后问题
  */
 public class QueensConstraint extends Constraint<Integer, Integer> {
-    private List<Integer> columns;
+    private final List<Integer> columns;
 
     public QueensConstraint(List<Integer> columns) {
         super(columns);
