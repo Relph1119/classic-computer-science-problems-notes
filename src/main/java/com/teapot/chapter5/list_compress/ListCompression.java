@@ -19,8 +19,8 @@ import java.util.zip.GZIPOutputStream;
 public class ListCompression extends Chromosome<ListCompression> {
     private static final List<String> ORIGINAL_LIST = List.of("Michael", "Sarah", "Joshua", "Narine",
             "David", "Sajid", "Melanie", "Daniel", "Wei", "Dean", "Brian", "Murat", "Lisa");
-    private List<String> myList;
-    private Random random;
+    private final List<String> myList;
+    private final Random random;
 
     public ListCompression(List<String> list) {
         myList = new ArrayList<>(list);

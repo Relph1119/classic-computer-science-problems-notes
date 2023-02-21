@@ -20,17 +20,17 @@ public class GeneticAlgorithm<C extends Chromosome<C>> {
      * 选择方法：轮盘式选择法、锦标赛选择法
      */
     public enum SelectionType {
-        ROULETTE, TOURNAMENT;
+        ROULETTE, TOURNAMENT
     }
 
     private ArrayList<C> population;
     // 每一代中染色体突变的概率
-    private double mutationChance;
+    private final double mutationChance;
     // 被选中繁殖的双亲生育出带有它们的混合基因的后代的概率
-    private double crossoverChance;
+    private final double crossoverChance;
     // 选择方法的类型
-    private SelectionType selectionType;
-    private Random random;
+    private final SelectionType selectionType;
+    private final Random random;
 
     public GeneticAlgorithm(List<C> initialPopulation, double mutationChance, double crossoverChance, SelectionType selectionType) {
         this.population = new ArrayList<>(initialPopulation);

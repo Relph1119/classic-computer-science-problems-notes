@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  */
 public abstract class Graph<V, E extends Edge> {
     // 顶点列表
-    private ArrayList<V> vertices = new ArrayList<>();
+    private final ArrayList<V> vertices = new ArrayList<>();
     // 邻接表（整数索引）
     protected ArrayList<ArrayList<E>> edges = new ArrayList<>();
 
