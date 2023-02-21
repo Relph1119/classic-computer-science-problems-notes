@@ -26,8 +26,8 @@ public class KMeans<Point extends DataPoint> {
         }
     }
 
-    private List<Point> points;
-    private List<Cluster> clusters;
+    private final List<Point> points;
+    private final List<Cluster> clusters;
 
     public KMeans(int k, List<Point> points) {
         if (k < 1) {

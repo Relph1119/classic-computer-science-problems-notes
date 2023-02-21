@@ -5,7 +5,7 @@ import java.util.List;
 
 public class DataPoint {
     public final int numDimensions;
-    private List<Double> originals;
+    private final List<Double> originals;
     // 存储每个维度的实际值
     public List<Double> dimensions;
 

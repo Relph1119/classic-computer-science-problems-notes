@@ -11,8 +11,8 @@ import java.util.List;
  * 按从专辑的时间长度（以分钟为单位）和歌曲数量对迈克尔·杰克逊的专辑进行聚类
  */
 public class Album extends DataPoint {
-    private String name;
-    private int year;
+    private final String name;
+    private final int year;
 
     public Album(String name, int year, double length, double tracks) {
         // 专辑的时间长度（以分钟为单位）和歌曲数量
