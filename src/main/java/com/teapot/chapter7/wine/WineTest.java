@@ -8,6 +8,10 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * P150
+ * 葡萄酒数据集的分类任务
+ */
 public class WineTest {
     private final List<double[]> wineParameters = new ArrayList<>();
     private final List<double[]> wineClassifications = new ArrayList<>();
