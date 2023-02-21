@@ -37,7 +37,6 @@ public final class Statistics {
     /**
      * 计算z-score
      * z-score = (x - mean) / std
-     * @return
      */
     public List<Double> zscored() {
         double mean = mean();
